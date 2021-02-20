@@ -1,0 +1,65 @@
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+### Go template
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+### Go template
+# Binaries for programs and plugins
+
+# Test binary, built with `go test -c`
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+
+
+#-----忽略规则学习
+#-- 这个表示 忽略全部 jpg文件。任何目录下都会被忽略
+#*.jpg
+
+# 忽略目录
+logs/
+
+# 上面忽略了全部(jpg)，此处保留这部分
+!other/downnv/34558_70/*.jpg
+
+#---------------根目录|子目录|子子目录-----start
+# 这个表示(根目录)下面的 a.sh 要忽略
+/a.sh
+
+# 这个表示 所有的a.sh都忽略
+#a.sh
+
+# 一个*表示一级目录下的 b.sh 都忽略(子目录)
+/*/a.sh
+
+# 两个*表示多级目录下的 b.sh 都忽略(子子目录)
+/**/b.sh
+#---------------根目录|子目录|子子目录-----end
